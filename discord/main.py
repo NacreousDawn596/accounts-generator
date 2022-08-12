@@ -88,4 +88,5 @@ saved in: {file}
 
 if __name__ == "__main__":
 	for i in range(0, int(sys.argv[1])):
-		gen()
+		try: gen(sys.argv[2])
+		except: gen()
