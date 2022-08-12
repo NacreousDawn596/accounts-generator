@@ -55,9 +55,9 @@ class botplayer():
 
 if __name__ == "__main__":
 	parser = ArgumentParser()
-	parser.add_argument('--file', nargs='?', const=1, type=str, default="credentials.txt")
+	parser.add_argument('--file', nargs='?', const=1, type=str, default="./credentials.txt")
 	parser.add_argument('-n', nargs='?', const=1, type=int, default="1")
-	parser.add_argument('--driver', nargs='?', const=1, type=str, default="chromedriver")
+	parser.add_argument('--driver', nargs='?', const=1, type=str, default="./chromedriver")
 	data = parser.parse_args()
 	user_player = botplayer(data.driver)
 	account = choice(loads(open(data.file, "r").read()))
