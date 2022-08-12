@@ -7,6 +7,14 @@ some little python codes to generate accounts on some known plateforms
 just to show new python developers how to use selenium and requests by creating accounts and playing spotify music...
 
 # how to set it up:
+
+first install chromium browser:
+```
+sudo apt-get install chromium-browser -y
+```
+
+then:
+
 ```py
 python3 setup.py
 ```
